@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Freelance Copywriter">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="py-16 text-center lg:text-left">
+      <p class="text-sm font-semibold text-indigo-600 tracking-wide uppercase eyebrow mb-2">Freelance copywriter</p>
+      <h1 class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl mb-6">
+        Get the edge with human flair
+      </h1>
+      <p class="mt-4 text-xl text-slate-600 lede mb-8 max-w-3xl">
+        Your competitors are all making the same mistake: relying on tired AI clichés that say nothing about their business. This is your chance to stand out — copy that's driven results from global newsrooms to sports disruptors, fresh, fearless, and authentic, just like your brand.
+      </p>
+      
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold mb-4">Brands I've worked with</h2>
+        <p class="text-lg text-slate-600 mb-8">
+          Your brand deserves copy that's unique to you, and compelling to everyone. AI will never really sound like you — I will.
+        </p>
+      </div>
+
+      <div class="mt-16 bg-indigo-50 rounded-2xl p-8 lg:p-12">
+        <p class="text-sm font-semibold text-indigo-600 tracking-wide uppercase eyebrow mb-2">Why not just use AI?</p>
+        <h2 class="text-3xl font-bold mb-6">Your big idea deserves better than slop</h2>
+        <div class="space-y-6 text-lg text-slate-700">
+          <p class="block">Your company is built on an idea that's unique, ambitious and built on rigorous research.</p>
+          <p class="block">You <em>could</em> settle for AI slop. Lots of other people have made that choice. But AI will never really sound like you.</p>
+          <div class="block callout bg-white p-6 rounded-lg border border-indigo-100 shadow-sm mt-8 font-medium text-indigo-900">
+            By working with me, your brand will get the copy it deserves — unique to you, compelling to everyone.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>

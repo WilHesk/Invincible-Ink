@@ -1,46 +1,39 @@
-# Astro Starter Kit: Basics
+# Invincible Ink Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a static website built with Astro, React, and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Getting Started
 
-## 🚀 Project Structure
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Inside of your Astro project, you'll see the following folders and files:
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Deployment to Netlify
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+To deploy this site on Netlify from GitHub:
 
-## 🧞 Commands
+1. Create a repository on GitHub and push this code.
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/your-repo.git
+   git push -u origin main
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. Go to [Netlify](https://app.netlify.com/) and log in.
+3. Click "Add new site" -> "Import an existing project".
+4. Select GitHub and authorize Netlify.
+5. Choose your newly created repository.
+6. Netlify will automatically detect that this is an Astro project. The build settings should be:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+7. Click "Deploy site".
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Netlify will automatically build and deploy your site every time you push to the `main` branch.
