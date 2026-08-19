@@ -3,75 +3,121 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Results">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <p class="text-sm font-semibold text-indigo-600 tracking-wide uppercase eyebrow mb-2">Case studies</p>
-    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl mb-8">
-      Creativity that delivers, time and time again
-    </h1>
-    <p class="lede text-xl text-slate-600 mb-16 max-w-3xl">
-      I've delivered results for all kinds of clients, from a global entertainment giant to a data-driven finance platform.
-    </p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <p class="text-sm font-semibold text-indigo-600 tracking-widest uppercase mb-4">Case studies</p>
+      <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight">
+        Creativity that <span class="text-indigo-600">delivers</span>.
+      </h1>
+      <p class="text-xl text-slate-600 font-light">
+        I've delivered results for all kinds of clients, from a global entertainment giant to a data-driven finance platform.
+      </p>
+    </div>
 
-    <div class="space-y-16">
+    <div class="space-y-32">
       <!-- Sports -->
-      <div class="border-t border-slate-200 pt-10">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">Sports</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="text-lg text-slate-700 space-y-4">
-            <p class="desc">As global lead copywriter at LIV Golf, I have played a foundational role in the world's most disruptive sports project.</p>
-            <p class="desc">My role has spanned everything from brand architecture to event signage, helping establish the league in over 20 different countries.</p>
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-2xl flex items-center justify-center group">
+            <!-- Placeholder for image -->
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 opacity-90 transition-opacity group-hover:opacity-100"></div>
+            <div class="relative z-10 text-white text-center p-8">
+              <span class="block text-7xl font-black mb-4">4M+</span>
+              <span class="block text-xl font-medium opacity-90">Paying Guests</span>
+              <div class="w-12 h-1 bg-white/50 mx-auto my-6 rounded-full"></div>
+              <span class="block text-5xl font-black mb-4">240M</span>
+              <span class="block text-xl font-medium opacity-90">Website Views</span>
+            </div>
           </div>
-          <div class="bg-indigo-50 p-6 rounded-xl flex items-center justify-center">
-            <p class="case-caption font-semibold text-indigo-900 text-center">LIV attracted more than 4 million paying guests and 240 million website views during my time on the project.</p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Sports</h2>
+          <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Global Lead Copywriter at LIV Golf</h3>
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            I played a foundational role in the world's most disruptive sports project. My role spanned everything from brand architecture to event signage, helping establish the league in over 20 different countries.
+          </p>
+          <div class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition-colors cursor-pointer">
+            Read full case study <span class="ml-2 text-xl">&rarr;</span>
           </div>
         </div>
       </div>
 
       <!-- Business and finance -->
-      <div class="border-t border-slate-200 pt-10">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">Business and finance</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="text-lg text-slate-700 space-y-4">
-            <p class="desc">I have produced a range of thought-leadership content for business and financial brands, channelling my journalistic background to provide original insights.</p>
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="aspect-[4/3] bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-2xl flex items-center justify-center group">
+            <div class="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-teal-600 opacity-90 transition-opacity group-hover:opacity-100"></div>
+            <div class="relative z-10 text-white text-center p-8">
+              <span class="block text-8xl font-black mb-4">15%</span>
+              <span class="block text-2xl font-medium opacity-90">Average Open Rate</span>
+              <p class="mt-6 text-emerald-50 text-lg">Consistent daily engagement</p>
+            </div>
           </div>
-          <div class="bg-indigo-50 p-6 rounded-xl flex items-center justify-center">
-            <p class="case-caption font-semibold text-indigo-900 text-center">This daily newsletter for Stockopedia achieves an average open rate of over 15%.</p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Business & Finance</h2>
+          <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Thought Leadership for Stockopedia</h3>
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            I have produced a range of thought-leadership content for business and financial brands, channelling my journalistic background to provide original insights for a sophisticated audience.
+          </p>
+          <div class="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors cursor-pointer">
+            Read full case study <span class="ml-2 text-xl">&rarr;</span>
           </div>
         </div>
       </div>
 
       <!-- Healthcare -->
-      <div class="border-t border-slate-200 pt-10">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">Healthcare</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="text-lg text-slate-700 space-y-4">
-            <p class="desc">In tandem with The Keenfolks, a digital transformation agency in Barcelona, I led the creation of Protect Our Future Too — a global campaign to protect domestic animals from the effects of climate change.</p>
-            <p class="desc">Our collaboration led to effective interactions at every touchpoint.</p>
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-2xl flex items-center justify-center group">
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-400 to-orange-500 opacity-90 transition-opacity group-hover:opacity-100"></div>
+            <div class="relative z-10 text-white text-center p-8">
+              <span class="block text-7xl font-black mb-4">19</span>
+              <span class="block text-2xl font-medium opacity-90">Countries Reached</span>
+              <p class="mt-6 text-rose-50 text-lg">International delegates connected</p>
+            </div>
           </div>
-          <div class="bg-indigo-50 p-6 rounded-xl flex items-center justify-center">
-            <p class="case-caption font-semibold text-indigo-900 text-center">The campaign reached its apex in an international conference attended by delegates from 19 countries.</p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Healthcare</h2>
+          <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Protect Our Future Too</h3>
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            In tandem with The Keenfolks, a digital transformation agency in Barcelona, I led the creation of Protect Our Future Too — a global campaign to protect domestic animals from the effects of climate change.
+          </p>
+          <div class="inline-flex items-center text-rose-600 font-semibold hover:text-rose-700 transition-colors cursor-pointer">
+            Read full case study <span class="ml-2 text-xl">&rarr;</span>
           </div>
         </div>
       </div>
 
       <!-- AI and machine learning -->
-      <div class="border-t border-slate-200 pt-10">
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI and machine learning</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="text-lg text-slate-700 space-y-4">
-            <p class="desc">Before Claude. Before Gemini. Even before ChatGPT, I was covering AI as both a journalist and copywriter, building the knowledge which means I can communicate this topic with native fluency.</p>
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="aspect-[4/3] bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-2xl flex items-center justify-center group">
+            <div class="absolute inset-0 bg-gradient-to-bl from-blue-500 to-indigo-800 opacity-90 transition-opacity group-hover:opacity-100"></div>
+            <div class="relative z-10 text-white text-center p-8">
+              <span class="block text-5xl font-black mb-4">Fan Caddie</span>
+              <span class="block text-xl font-medium opacity-90">The first chatbot for golf fans</span>
+            </div>
           </div>
-          <div class="bg-indigo-50 p-6 rounded-xl flex items-center justify-center">
-            <p class="case-caption font-semibold text-indigo-900 text-center">At LIV Golf we worked with London-based product agency Future Platforms to develop Fan Caddie, the first chatbot for golf fans.</p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">AI & Machine Learning</h2>
+          <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Native Fluency in Tech</h3>
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            Before Claude. Before Gemini. Even before ChatGPT, I was covering AI as both a journalist and copywriter, building the knowledge which means I can communicate this topic with native fluency.
+          </p>
+          <div class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors cursor-pointer">
+            Read full case study <span class="ml-2 text-xl">&rarr;</span>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="mt-16 bg-slate-900 text-white rounded-2xl p-8 lg:p-12 text-center">
-      <h2 class="text-3xl font-bold mb-4">Want results like these for your brand?</h2>
-      <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">Tell me what you're trying to achieve on a free discovery call, and I'll show you exactly how I'd approach it.</p>
-      <a href="mailto:contact@invincibleink.com" class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-slate-900 bg-white hover:bg-slate-100">
+    <div class="mt-32 border-t border-slate-200 pt-16 text-center">
+      <h2 class="text-4xl font-bold text-slate-900 mb-6">Want results like these?</h2>
+      <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-light">Tell me what you're trying to achieve on a free discovery call, and I'll show you exactly how I'd approach it.</p>
+      <a href="mailto:contact@invincibleink.com" class="inline-flex items-center justify-center px-8 py-4 rounded-full shadow-lg text-lg font-bold text-white bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-500/30 transition-all hover:scale-105">
         Let's talk results
       </a>
     </div>

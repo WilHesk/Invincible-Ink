@@ -25,11 +25,10 @@ const { title } = Astro.props;
             <a href="/" class="text-2xl font-bold tracking-tight text-indigo-900">Invincible Ink.</a>
           </div>
           <nav class="hidden md:flex space-x-8">
-            <a href="/" class="text-slate-600 hover:text-indigo-600 font-medium">Home</a>
-            <a href="/services" class="text-slate-600 hover:text-indigo-600 font-medium">Services</a>
-            <a href="/results" class="text-slate-600 hover:text-indigo-600 font-medium">Results</a>
-            <a href="/pledge" class="text-slate-600 hover:text-indigo-600 font-medium">The Pledge</a>
-            <a href="/testimonials" class="text-slate-600 hover:text-indigo-600 font-medium">Testimonials</a>
+            <a href="/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Home</a>
+            <a href="/services" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Services</a>
+            <a href="/results" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Results</a>
+            <a href="/testimonials" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Testimonials</a>
           </nav>
           <div class="hidden md:flex">
             <a href="mailto:contact@invincibleink.com" class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700">
@@ -40,7 +39,7 @@ const { title } = Astro.props;
       </div>
     </header>
 
-    <main class="pt-24 pb-16 min-h-screen">
+    <main class="min-h-screen">
       <slot />
     </main>
 

@@ -3,34 +3,92 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Freelance Copywriter">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="py-16 text-center lg:text-left">
-      <p class="text-sm font-semibold text-indigo-600 tracking-wide uppercase eyebrow mb-2">Freelance copywriter</p>
-      <h1 class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl mb-6">
-        Get the edge with human flair
-      </h1>
-      <p class="mt-4 text-xl text-slate-600 lede mb-8 max-w-3xl">
-        Your competitors are all making the same mistake: relying on tired AI clichés that say nothing about their business. This is your chance to stand out — copy that's driven results from global newsrooms to sports disruptors, fresh, fearless, and authentic, just like your brand.
-      </p>
+  <!-- Hero Section -->
+  <section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-slate-900 text-white">
+    <!-- Abstract Background Elements -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-600/30 blur-[100px] mix-blend-screen"></div>
+      <div class="absolute top-1/2 -right-32 w-[600px] h-[600px] rounded-full bg-violet-600/20 blur-[120px] mix-blend-screen"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <p class="text-sm font-bold text-indigo-400 tracking-widest uppercase mb-6">Freelance copywriter</p>
       
-      <div class="mt-12">
-        <h2 class="text-2xl font-bold mb-4">Brands I've worked with</h2>
-        <p class="text-lg text-slate-600 mb-8">
-          Your brand deserves copy that's unique to you, and compelling to everyone. AI will never really sound like you — I will.
-        </p>
-      </div>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8">
+        Get the edge with <br/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+          human flair.
+        </span>
+      </h1>
+      
+      <p class="mt-6 text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-12 font-light">
+        Your competitors are making the same mistake: relying on tired AI clichés. 
+        Stand out with copy that's fresh, fearless, and authentic.
+      </p>
 
-      <div class="mt-16 bg-indigo-50 rounded-2xl p-8 lg:p-12">
-        <p class="text-sm font-semibold text-indigo-600 tracking-wide uppercase eyebrow mb-2">Why not just use AI?</p>
-        <h2 class="text-3xl font-bold mb-6">Your big idea deserves better than slop</h2>
-        <div class="space-y-6 text-lg text-slate-700">
-          <p class="block">Your company is built on an idea that's unique, ambitious and built on rigorous research.</p>
-          <p class="block">You <em>could</em> settle for AI slop. Lots of other people have made that choice. But AI will never really sound like you.</p>
-          <div class="block callout bg-white p-6 rounded-lg border border-indigo-100 shadow-sm mt-8 font-medium text-indigo-900">
-            By working with me, your brand will get the copy it deserves — unique to you, compelling to everyone.
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:contact@invincibleink.com" class="px-8 py-4 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold text-lg transition-all shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:shadow-[0_0_30px_rgba(99,102,241,0.6)]">
+          Work with me
+        </a>
+        <a href="/results" class="px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-lg backdrop-blur-md transition-all border border-white/10">
+          See the results
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Carousel Section -->
+  <section class="py-20 border-b border-slate-200 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+      <h2 class="text-2xl font-bold text-slate-400 uppercase tracking-widest text-sm">Brands I've worked with</h2>
+    </div>
+    
+    <div class="relative flex overflow-x-hidden group">
+      <!-- First Marquee -->
+      <div class="animate-marquee whitespace-nowrap flex items-center gap-16 px-8">
+        {/* Placeholders for Logos */}
+        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          <div class="h-16 w-48 bg-slate-100 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <span class="text-slate-400 font-bold text-xl">BRAND {num}</span>
+          </div>
+        ))}
+      </div>
+      
+      <!-- Second Marquee (duplicate for seamless loop) -->
+      <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center gap-16 px-8">
+        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          <div class="h-16 w-48 bg-slate-100 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <span class="text-slate-400 font-bold text-xl">BRAND {num}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Human? Section -->
+  <section class="py-32 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-[2rem] p-10 md:p-16 shadow-xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+        
+        <div class="relative z-10">
+          <p class="text-sm font-bold text-indigo-600 tracking-widest uppercase mb-4">Why not just use AI?</p>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">
+            Your big idea deserves better than slop
+          </h2>
+          
+          <div class="space-y-6 text-xl text-slate-600 leading-relaxed font-light">
+            <p>Your company is built on an idea that's unique, ambitious and built on rigorous research.</p>
+            <p>You <em>could</em> settle for AI slop. Lots of other people have made that choice. But AI will never really sound like you.</p>
+            
+            <div class="mt-12 bg-indigo-900 text-white p-8 rounded-2xl border-l-4 border-indigo-400">
+              <p class="font-medium text-lg italic">
+                "By working with me, your brand will get the copy it deserves — unique to you, compelling to everyone."
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </Layout>
