@@ -4,14 +4,16 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Freelance Copywriter">
   <!-- Hero Section -->
-  <section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-slate-900 text-white">
+  <section class="relative min-h-[90vh] flex flex-col justify-between overflow-hidden bg-slate-900 text-white">
     <!-- Abstract Background Elements -->
     <div class="absolute inset-0 z-0">
       <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-600/30 blur-[100px] mix-blend-screen"></div>
       <div class="absolute top-1/2 -right-32 w-[600px] h-[600px] rounded-full bg-violet-600/20 blur-[120px] mix-blend-screen"></div>
     </div>
     
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+    <div class="pt-24 md:pt-32"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex-grow flex flex-col justify-center pb-12">
       <p class="text-sm font-bold text-indigo-400 tracking-widest uppercase mb-6">Freelance copywriter</p>
       
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8">
@@ -35,32 +37,32 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
     </div>
-  </section>
 
-  <!-- Brands Carousel Section -->
-  <section class="py-20 border-b border-slate-200 bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-      <h2 class="text-2xl font-bold text-slate-400 uppercase tracking-widest text-sm">Brands I've worked with</h2>
-    </div>
-    
-    <div class="relative flex overflow-x-hidden group">
-      <!-- First Marquee -->
-      <div class="animate-marquee whitespace-nowrap flex items-center gap-16 px-8">
-        {/* Placeholders for Logos */}
-        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-          <div class="h-16 w-48 bg-slate-100 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-            <span class="text-slate-400 font-bold text-xl">BRAND {num}</span>
-          </div>
-        ))}
+    <!-- Brands Carousel Section (Above the fold) -->
+    <div class="relative z-10 w-full py-8 border-t border-white/10 bg-white/5 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+        <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Brands I've worked with</h2>
       </div>
       
-      <!-- Second Marquee (duplicate for seamless loop) -->
-      <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center gap-16 px-8">
-        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-          <div class="h-16 w-48 bg-slate-100 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-            <span class="text-slate-400 font-bold text-xl">BRAND {num}</span>
-          </div>
-        ))}
+      <div class="relative flex overflow-x-hidden group">
+        <!-- First Marquee -->
+        <div class="animate-marquee whitespace-nowrap flex items-center gap-16 px-8">
+          {/* Placeholders for Logos */}
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+            <div class="h-12 w-40 bg-white/10 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <span class="text-white/50 font-bold text-lg">BRAND {num}</span>
+            </div>
+          ))}
+        </div>
+        
+        <!-- Second Marquee (duplicate for seamless loop) -->
+        <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center gap-16 px-8">
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+            <div class="h-12 w-40 bg-white/10 rounded-lg flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <span class="text-white/50 font-bold text-lg">BRAND {num}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>
